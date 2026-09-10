@@ -40,7 +40,7 @@ void insert(PPNODE first,int no)
             }
             else if(no<temp->data)
             {
-                if(temp->rchild==NULL)
+                if(temp->lchild==NULL)
                 {
                     temp->lchild=newnode;
                     break;
@@ -57,15 +57,7 @@ void insert(PPNODE first,int no)
     }
 }
 
-void inorder(PNODE first)
-{
-    if(first!=NULL)
-    {
-        inorder(first->lchild);
-        printf("%d",first->data);
-        inorder(first->rchild);
-    }
-}
+
 
 
 void preorder(PNODE first)
@@ -87,6 +79,5 @@ int main()
  insert(&head,35);
  insert(&head,41);
 
- inorder(head);
  preorder(head);
 }

@@ -1,19 +1,18 @@
 #include <stdio.h>
 #include <fcntl.h>
-
+#include <unistd.h>
 
 int main()
 {
-    int fd;
+    int fd=0;
     int iRet=0;
-fd = open("demo.txt", O_WRONLY | O_APPEND);
+    fd = open("file.txt",O_WRONLY | O_APPEND);
 
     if (fd == -1)
     {
         printf("File not created\n");
         return 1;
     }
-
     else
     {
     printf("File opened successfully. FD = %d\n", fd);

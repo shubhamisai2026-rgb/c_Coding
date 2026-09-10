@@ -21,7 +21,7 @@ int main()
 
         memset(data,'\0',100);
 
-        iRet=read(fd,data,12);
+        iRet=read(fd,data,13);
         printf("number of byte used for the read %d\n",iRet);
         printf("%s\n",data);
 

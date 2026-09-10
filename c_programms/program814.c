@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
-
 #pragma pack(1)
 
 struct node

@@ -17,7 +17,7 @@ void inorder(PNODE first)
     if(first!=NULL)
     {
     inorder(first->lchild);
-    printf("%d",first->data);
+    printf("%d\n",first->data);
     inorder(first->rchild);
     }
 }
@@ -73,6 +73,7 @@ int main()
     insert(&head,56);
     insert(&head,45);
     insert(&head,42);
+    insert(&head,43);
     insert(&head,75);
     insert(&head,211);
     insert(&head,34);

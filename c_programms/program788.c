@@ -16,16 +16,16 @@ int main()
      }
      else
      {
-        printf("%d file successfully open",fd);
+        printf("%d\n file successfully open",fd);
         lseek(fd,5,0);
         iRet=read(fd,data,13);
-        printf("number of size use for the read the file %d",iRet);
-        printf("%s",data);
+        printf("number of size use for the read the file %d\n",iRet);
+        printf("%s\n",data);
          memset(data,'\0',sizeof(data));
          lseek(fd,5,1);
-         iRet=read(fd,data,12);
-         printf("number of size used for the file %d",iRet);
-         printf("%s",data);
+         iRet=read(fd,data,13);
+         printf("number of size used for the file %d\n",iRet);
+         printf("%s\n",data);
          close(fd);
          return 0;
      }

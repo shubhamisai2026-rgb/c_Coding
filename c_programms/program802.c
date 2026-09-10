@@ -16,8 +16,8 @@ void display(char *fname)
 {
    struct stat sobj;
    stat(fname,&sobj);
-   printf("file name %s",fname);
-   printf("inode number:%lu",sobj.st_ino);
-   printf("size of the file is:%d",sobj.st_size);
+   printf("file name %s\n",fname);
+   printf("inode number:%lu\n",sobj.st_ino);
+   printf("size of the file is:%d\n",sobj.st_size);
 
 }

@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<fcntl.h>
+#include<unistd.h>
 #include<String.h>
 
 int main()
@@ -15,13 +16,13 @@ int main()
     }
     else
     {
-        printf("file successfully open...%d",fd);
+        printf("file successfully open...%d\n",fd);
         iRet=read(fd,data,13);
-        printf("number of bytes return by the file %d",iRet);
+        printf("number of bytes return by the file %d\n",iRet);
         printf("%s",data);
 
-        iRet=read(fd,datax,3);
-        printf("number of bytes return by the file %d",iRet);
+        iRet=read(fd,datax,13);
+        printf("number of bytes return by the file %d\n",iRet);
         printf("%s",datax);
 
         close(fd);

@@ -5,7 +5,7 @@ int main()
 {
     int fd=0;
     int iRet=0;
-    fd=open("marvellous.txt",O_RDWR | O_APPEND |O_CREAT,0666);
+    fd=open("demo.txt",O_RDWR | O_APPEND |O_CREAT,0666);
     if(fd==-1)
     {
         printf("unable to open the file");
@@ -13,7 +13,7 @@ int main()
     else
     {
         printf("file gets successfully opened %d",fd);
-        iRet=write(fd,"jav ganesh",13);
+        iRet=write(fd,"jay ganesh",10);
         printf("number of bytes for the file is %d",iRet);
         close(fd);
     }

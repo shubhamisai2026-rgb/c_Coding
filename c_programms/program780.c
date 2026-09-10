@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <fcntl.h>
-#include <String.h>
+#include<unistd.h>
+#include <string.h>
 
 int main()
 {
     int fd = 0;
     int iRet = 0;
     char data[] = "marvellous infosystem";
-    fd = open("marvellous.txt", O_RDWR | O_APPEND);
+    fd = open("marvellous.txt", O_RDWR | O_APPEND|O_CREAT, 0666);
     if (fd == -1)
     {
         printf("unable to open the file %d", fd);

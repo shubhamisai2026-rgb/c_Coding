@@ -18,9 +18,9 @@ int main()
         printf("file is successfully open %d\n",fd);
         iRet=read(fd,data,13);
         printf("number of bytes used for open the file %d\n",iRet);
-        printf("%s",data);
-      ///issue can create about buffer because previus buffer data not clean yet
-       iRet=read(fd,data,1);
+        printf("%s\n",data);
+        //issue can create about buffer because previus buffer data not clean yet
+        iRet=read(fd,data,13);
         printf("number of bytes used for open the file %d\n",iRet);
         printf("%s",data);
 

@@ -20,7 +20,7 @@ int main()
 
         memset(data,'\0',sizeof(data));
 
-       iRet=read(fd,data,12);
+       iRet=read(fd,data,13);
        printf("number of bytes used for the read the file..%d",iRet);
        printf("%s",data);
 

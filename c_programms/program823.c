@@ -3,7 +3,7 @@
 int main()
 {
   int fd=0;
-  fd=creat("demo.txt ",O_CREAT);
+  fd=open("demo2.txt ",O_CREAT);
   if(fd==-1)
   {
     printf("file not created");

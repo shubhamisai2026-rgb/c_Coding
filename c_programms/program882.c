@@ -15,7 +15,7 @@ void file_copy(char source_file[],char desination_file[])
         printf("unable to open to source file\n");
         return;
     }
-    fddest=creat(desination_file,O_CREAT|O_RDWR|O_APPEND);
+    fddest=creat(desination_file,0777);
 
     if(fddest==-1)
     {
@@ -38,11 +38,10 @@ int main()
     printf("enter the source file name:\n");
      scanf("%[^\n]",source_file);
 
-     getchar();
 
      printf("enter a destination file name:\n");
-     scanf("%[^\n]",destination_file);
-     getchar();
+     scanf(" %[^\n]",destination_file);
+
 
      file_copy(source_file,destination_file);
 

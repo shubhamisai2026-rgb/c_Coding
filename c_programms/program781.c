@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<fcntl.h>
-#include<String.h>
+#include<unistd.h>
+#include<string.h>
 
 int main()
 {
@@ -15,7 +16,7 @@ int main()
     else
     {
         printf("file is successfully open %d",fd);
-        iRet=read(fd,data,13);
+        iRet=read(fd,data,21);
         printf("number of bytes used :%d",iRet);
         printf("%s",data);
         close(fd);
