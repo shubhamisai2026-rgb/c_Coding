@@ -35,7 +35,7 @@ int main()
     }
     else
     {
-        printf("your price will be %d rupees %d\n", iret);
+        printf("your price will be %d rupees %d\n", iret,ivalue);
     }
     return 0;
 }
